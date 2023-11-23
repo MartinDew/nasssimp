@@ -29,4 +29,4 @@ switch(str)
 Don't hesitate to open an issue or a pull request if you find a bug or want to add a feature to this project.
 
 # License
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details
