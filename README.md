@@ -30,3 +30,6 @@ Don't hesitate to open an issue or a pull request if you find a bug or want to a
 
 # License
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details
+
+# Mentions 
+The hashing methods I used are based on this stack overflow thread
