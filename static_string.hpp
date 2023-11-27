@@ -88,7 +88,8 @@ constexpr uint32_t crc32(std::string_view str)
 struct static_string
 {
     constexpr static_string(const char* str, const size_t len) : view{ str, len } {}
-
+    constexpr static_string(string_view str) : view{ str } {}
+    
     constexpr bool operator==(uint32_t str) const
     {
         return crc32(view) == str;
