@@ -104,9 +104,30 @@ struct static_string
     {
         return view.data();
     }
+
+    operator std::string() const
+    {
+        return std::string{ view };
+    }
+
+    operator const char*() const noexcept
+    {
+        return view.data();
+    }
+
+    consteval bool operator==(const static_string& other) const noexcept
+    {
+        return view == other.view;
+    }
+
+    consteval bool operator==(const string& other) const
+    {
+        return view == other;
+    }
 private:
     std::string_view view;
 };
+
 
 consteval auto operator""_ss(const char* str, std::size_t len)
 {
